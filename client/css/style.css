@@ -1,0 +1,70 @@
+/*-----------------------------------
+            setup/links
+------------------------------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Gruppo|Expletus+Sans|Quicksand:400,300|Lato:100,300);
+a, svg {
+  transition: all 0.2s ease-in-out
+}
+body, html {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-family: "Lato";
+}
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+nav {
+  height: 80px;
+}
+
+/*-----------------------------------
+            main-navigation
+------------------------------------- */
+
+#nav-section .nav--main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  width: 100vw;
+  height: 8vh;
+  background-color: #f3f3f3;
+  font-size: 1.1em;
+  font-family: "Lato";
+}
+#nav-section .nav--logo {
+  float: left;
+  padding: 3px;
+}
+#nav-section .nav--main ul {
+  padding: 0;
+  margin: 0;
+  width: 60%;
+
+}
+#nav-section .nav--main li {
+  list-style: none;
+  width: 80px;
+  height: 8vh;
+
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-transform: lowercase;
+}
+#nav-section .nav--main li:hover{
+  background-color: white;
+  color: rgb(112, 220, 227)
+}
+#nav-section .nav--login {
+  color: red;
+
+}

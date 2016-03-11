@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="fanFlight" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="FanFlight" content="">
+    <title> | Fan Flight | </title>
+    <link rel="stylesheet" href="./client/css/style.css">
+  </head>
+  <body ng-controller="mainCtrl">
+    <section id="nav-section">
+      <nav class="nav--main">
+        <span class="nav--logo">LOGO</span>
+        <ul class="nav--sports">
+          <li id="nav-NCAAB">NCAAB</li>
+          <li id="nav-NCAAF">NCAAF</li>
+        </ul>
+        <span class="nav--login">LOGIN</span>
+      </nav>
+    </section>
+
+<section ng-controller="scheduleCtrl">
+ <ul>
+   <li>{{schedule.games}}</li>
+   <li></li>
+ </ul>
+</section>
+<!--  ANGULAR   -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+  <script src="//code.jquery.com/jquery-1.12.0.js"></script>
+
+  <script src="./client/js/app.js"></script>
+<!--  CONTROLLERS  -->
+  <script src="./client/js/controllers/mainCtrl.js"></script>
+  <script src="./client/js/controllers/scheduleCtrl.js"></script>
+<!--  SERVICES  -->
+  <script src="./client/js/services/scheduleService.js"></script>
+
+  </body>
+</html>
